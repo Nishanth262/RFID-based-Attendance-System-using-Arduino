@@ -1,5 +1,4 @@
 # RFID-based-Attendance-System-using-Arduino
-# RFID-Based Attendance Generating System
 
 # 📌 Overview
 The **RFID-Based Attendance Generating System** is an automated system designed to track and record attendance using RFID (Radio Frequency Identification) technology. This project eliminates manual attendance processes and enhances security and efficiency in schools, offices, and other organizations.
