@@ -72,7 +72,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## 📬 Contact
 For queries, reach out via:
 - Email: nishanthgowdars07@gmail.com
-- GitHub: 
+- GitHub: https://github.com/Nishanth262
 ---
 **📢 Star this repository if you find it useful!** ⭐
 
