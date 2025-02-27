@@ -1,0 +1,62 @@
+# Library Report for Embedded System Project
+
+## Overview
+This project integrates multiple hardware modules, including an **RFID reader (MFRC522), an LCD display (LiquidCrystal_I2C), a buzzer, a GSM module, and an RTC (Real-Time Clock) module**. Below is a detailed report on the libraries used in this project.
+
+## Libraries Used
+
+### 1. SPI Library (`SPI.h`)
+- **Purpose**: Used for communication between the microcontroller (Arduino) and the RFID module (MFRC522) via the SPI protocol.
+- **Installation**: Pre-installed in the Arduino IDE.
+- **Official Documentation**: [SPI Library](https://www.arduino.cc/en/Reference/SPI)
+
+### 2. MFRC522 Library (`MFRC522.h`)
+- **Purpose**: Enables communication with the MFRC522 RFID module to read and write RFID cards.
+- **Installation**:
+  - Can be installed via Arduino Library Manager.
+  - Alternatively, install manually from: [MFRC522 GitHub Repository](https://github.com/miguelbalboa/rfid)
+- **Usage**: Handles RFID card scanning, authentication, and reading/writing data.
+
+### 3. Wire Library (`Wire.h`)
+- **Purpose**: Provides I2C communication for the LCD display and RTC module.
+- **Installation**: Pre-installed in the Arduino IDE.
+- **Official Documentation**: [Wire Library](https://www.arduino.cc/en/reference/wire)
+
+### 4. LiquidCrystal_I2C Library (`LiquidCrystal_I2C.h`)
+- **Purpose**: Enables communication with an I2C-based LCD display (16x2 or other sizes).
+- **Installation**:
+  - Available in Arduino Library Manager.
+  - Alternatively, install from: [Arduino-LiquidCrystal-I2C-Library](https://github.com/johnrickman/LiquidCrystal_I2C)
+- **Usage**: Controls the display to show messages, RFID data, and system status.
+
+### 5. SoftwareSerial Library (`SoftwareSerial.h`)
+- **Purpose**: Allows serial communication on digital pins for the GSM module.
+- **Installation**: Pre-installed in the Arduino IDE.
+- **Official Documentation**: [SoftwareSerial Library](https://www.arduino.cc/en/Reference/SoftwareSerial)
+- **Usage**: Enables communication between Arduino and the GSM module.
+
+### 6. RTClib Library (`RTClib.h`)
+- **Purpose**: Used for interfacing with the Real-Time Clock (RTC) module to maintain date and time.
+- **Installation**:
+  - Can be installed via Arduino Library Manager.
+  - Alternatively, install manually from: [RTClib GitHub Repository](https://github.com/adafruit/RTClib)
+- **Usage**: Retrieves current date and time, useful for attendance logging and timestamping RFID scans.
+
+## Dependencies
+- **Arduino IDE (Recommended Version: 1.8.13 or higher)**
+- **Board Support Package (BSP) for your specific microcontroller (e.g., Arduino Uno, Mega, etc.)**
+
+## Installation Instructions
+To install the required libraries:
+1. Open Arduino IDE.
+2. Go to **Sketch** → **Include Library** → **Manage Libraries**.
+3. Search for each library by name and install the latest version.
+4. Alternatively, download and install manually from the provided GitHub links.
+
+## Conclusion
+These libraries facilitate communication between hardware components and the microcontroller, making it easier to implement features like RFID-based authentication, real-time monitoring, and GSM-based messaging. Proper installation and configuration ensure seamless operation of the system.
+
+---
+
+For any issues or contributions, feel free to submit a pull request or open an issue in this GitHub repository.
+
